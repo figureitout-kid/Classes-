@@ -1,5 +1,6 @@
 package com.techelevator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Project {
@@ -48,7 +49,7 @@ public class Project {
     private String startDate;
     private String dueDate;
     //*************************************************************
-    private List<Employee> teamMembers;
+    public List<Employee> teamMembers = new ArrayList<>();
 
     public Project(String name, String description, String startDate, String dueDate){
         this.name = name;
